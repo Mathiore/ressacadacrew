@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+
+*
+{
+    margin:0; padding:0 ;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    transition: all .2s linear ;
+}
+
+html
+{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body
+{
+    overflow-x: hidden;
+    background:black;
+}
+
+#header
+{
+    width: 100%;
+    position: fixed;
+    top:0; left:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2rem 4rem;
+    z-index: 1000;
+}
+
+.logo img
+{
+    height:7rem;
+    width:6rem;
+}
+nav ul
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+nav ul li
+{
+    margin-right:4rem;
+}
+nav ul li a
+{
+    color:#fff;
+    font-size:1.75rem;
+    text-decoration: none;
+}
+
+nav ul li a:hover
+{
+    color: rgba(143, 2, 185, 0.966);
+    text-decoration: none;
+}
+#INICIO
+{
+    background: linear-gradient(0deg, rgba(0,0,0), rgb(10, 10, 10));
+    position: relative;
+    z-index: 1;
+}
+.content h1
+{
+    font-size:5rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+    text-shadow: .1rem .1rem .3rem #333;
+    color:rgb(221, 212, 212);
+}
+.content h2
+{
+    color:rgb(221, 212, 212);
+}
+.video-container
+{
+    position:absolute;
+    top:0; left:0;
+    height:100vh;
+    width:100%;
+    z-index:-1;
+}
+.vid
+{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+.vid1
+{
+    display: block;
+}
+.fa-bars
+{
+    font-size:3.5rem;
+    z-index:10000;
+    color: #fff;
+    cursor:pointer;
+    display:none;
+}
+
+.fa-times
+{
+    transform:skew(-180deg) rotate(-180deg);
+}
+
+#SERVIÇOS
+{
+    background:#000;
+    min-height: 100vh;
+}
+
+.heading h1
+{
+    font-size: 4rem;
+    color: #fff;
+    padding-top:7rem;
+    margin-bottom: 2rem;
+}
+.card-container
+{
+    width: 95%;
+    margin:7rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card
+{
+    height:40rem;
+    width:30rem;
+    background: #fff;
+    padding:1rem;
+    margin:2rem;
+    text-align: center;
+}
+.card img
+{
+    height:80%;
+    width:100%;
+    object-fit: cover;
+}
+.card p
+{
+    font-size: 1.6rem;
+    margin:2rem 0;
+}
+.card .insta p
+{
+    margin:0;
+}
+.content h2
+{
+    opacity: 0.8;
+    font-size:3rem;
+    margin-top: 1rem;
+    color:#fff;
+}
+.card .content
+{
+    position: absolute;
+}
+.content p
+{
+    margin-top: 85%;
+    color:#000;
+    width:90%;
+    background-color: #fff;
+    font-size:2rem;
+    opacity: 0;
+    transition:0.6s;
+}
+.card:hover .content p
+{
+    opacity: 1;
+    transform: translateY(-75px);
+}
+
+.fa-mouse-pointer
+{
+    margin-top: .4rem;
+    font-size:2rem;
+}
+
+#SOBRE
+{
+    background-color: black;
+}
+#SOBRE p
+{
+    background:black;
+    margin-top:0;
+    color:#fff;
+    opacity: 1;
+    width:100%;
+    margin-bottom:10%;
+    font-size:2.5rem;
+}
+#SOBRE button
+{
+    height: 4rem;
+    width:14rem;
+    background:#fff;
+    color:#000;
+    outline: none;
+    border:none;
+    border-radius: 5rem;
+    font-size: 1.7rem;
+    margin-bottom:40%;
+}
+#SOBRE span
+{
+    background: #fff;
+    border: 1rem;
+    border-color: #fff;
+    color:#000;
+}
+#SOBRE button:hover
+{
+    color:#fff;
+    background:#000;
+}
+#SOBRE .image img
+{
+    width: 55rem;
+}
+
+#PORTIFOLIO
+{
+    min-height: 100vh;
+    width: 100vw;
+}
+#PORTIFOLIO .box-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+    width:90%;
+}
+#PORTIFOLIO .box-container .box
+{
+    height:20rem;
+    width:25rem;
+    border-radius: .5rem;
+    margin:2rem;
+    overflow:hidden;
+    position:relative;
+    box-shadow: 0 0 .5rem #333;
+}
+#PORTIFOLIO .box-container .box img
+{
+    transition: 1s;
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+#PORTIFOLIO .box-container .box img:hover
+{
+    filter: grayscale(100%);
+    transform:scale(1.1);
+}
+#PORTIFOLIO .heading button
+{
+    height: 4rem;
+    width:14rem;
+    background:#fff;
+    color:#000;
+    outline: none;
+    border:none;
+    border-radius: 5rem;
+    font-size: 1.7rem;
+}
+#PORTIFOLIO .heading button:hover
+{
+    color:#fff;
+    background:#000;
+}
+#PRODUCOES
+{
+    min-height: 100vh;
+    width: 100vw;
+}
+#PRODUCOES h1
+{
+    color:#fff;
+
+}
+#PRODUCOES .box-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+    width:90%;
+}
+#PRODUCOES .box-container .box
+{
+    height:25rem;
+    width:30rem;
+    border-radius: .5rem;
+    margin:2rem;
+    overflow:hidden;
+    position:relative;
+    box-shadow: 0 0 .5rem #333;
+}
+#PRODUCOES .box-container .box iframe
+{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+#CONTATOS .content
+{
+    color:#fff;
+}
+#CONTATOS .content p
+{
+    color:#fff;
+}
+#CONTATOS .fa-instagram
+{
+    font-size:4rem;
+}
+#CONTATOS a
+{
+    color:#fff;
+}
+#footer img
+{
+    height:5rem;
+    width:4rem;
+    opacity: 0.7;
+}
+#footer
+{
+    background:#fff;
+    color:#000;
+    opacity: 0.8;
+}
+
+
+
+@media (max-width:768px)
+{
+    html
+    {
+        font-size:50%;
+    }
+    .fa-bars
+    {
+        display: block;
+    }
+    nav
+    {
+        position: fixed;
+        top:0;left:-120%;
+        height:100vh;
+        width:35rem;
+        background:#000;
+    }
+    nav ul
+    {
+        flex-flow:column;
+        justify-content: center;
+        height:100%;
+    }
+    nav ul li
+    {
+        margin:2rem 0;
+    }
+    nav ul li a
+    {
+        font-size:3.25rem;
+    }
+    .nav-toggle
+    {
+        left:0;
+    }
+    #SOBRE .image
+    {
+    text-align: center;
+    }
+    #SOBRE .image img
+    {
+    width: 50rem;
+    }
+}
